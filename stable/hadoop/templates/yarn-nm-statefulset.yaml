@@ -17,6 +17,7 @@ spec:
       app: {{ include "hadoop.name" . }}
       release: {{ .Release.Name }}
       component: yarn-nm
+      sdr.appname: sam-hadoop
 {{- if .Values.yarn.nodeManager.parallelCreate }}
   podManagementPolicy: Parallel
 {{- end }}
@@ -26,6 +27,7 @@ spec:
         app: {{ include "hadoop.name" . }}
         release: {{ .Release.Name }}
         component: yarn-nm
+        sdr.appname: sam-hadoop
     spec:
       affinity:
         podAntiAffinity:

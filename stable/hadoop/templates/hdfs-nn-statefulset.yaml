@@ -17,12 +17,14 @@ spec:
       app: {{ include "hadoop.name" . }}
       release: {{ .Release.Name }}
       component: hdfs-nn
+      sdr.appname: sam-hadoop
   template:
     metadata:
       labels:
         app: {{ include "hadoop.name" . }}
         release: {{ .Release.Name }}
         component: hdfs-nn
+        sdr.appname: sam-hadoop
     spec:
       affinity:
         podAntiAffinity:
