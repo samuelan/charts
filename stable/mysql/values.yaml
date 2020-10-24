@@ -21,7 +21,7 @@ testFramework:
 ## Specify password for root user
 ##
 ## Default: random 10 character string
-# mysqlRootPassword: testing
+mysqlRootPassword: Letsgo5324
 
 ## Create a database user
 ##
@@ -110,7 +110,7 @@ persistence:
   ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
   ##   GKE, AWS & OpenStack)
   ##
-  # storageClass: "-"
+  storageClass: "scaleio"
   accessMode: ReadWriteOnce
   size: 8Gi
   annotations: {}
